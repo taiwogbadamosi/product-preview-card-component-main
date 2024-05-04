@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      box-sizing: border-box;
+      padding: 0px;
+      border: 0px;
+      margin: 0px;
+    }
+
+
+    body{
+      color: hsl(228, 12%, 48%);
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 14px;
+      
+    }
+   
+    div{
+      background-color: hsl(30, 38%, 92%);
+      height: 100vh;
+      height: 100svh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    main{
+      
+      width: 90%;
+      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      
+      
+    }
+    img{
+      border-radius: 1em 1em 0 0;
+      
+      width: 100%;
+      display: block;
+    }
+    section{
+      background-color: hsl(0, 0%, 100%) ;
+      border-radius: 0 0 1em 1em ;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      
+    }
+    section > *{
+      padding-bottom: 1rem;
+    }
+    cite{
+      font-size: 0.8em;
+    }
+    h1{
+      font-size: 2em;
+      font-family: "Fraunces";
+      color: hsl(212, 21%, 14%);
+      font-weight: 700;
+    }
+    b{
+      font-size: 2em;
+      color: hsl(158, 36%, 37%);
+      font-family: "Fraunces";
+      padding-right: 15px;
+    }
+    a{
+      text-decoration: none;
+      align-self: center;
+      width: 90%;
+      
+      
+    }
+    button{
+      background-color: hsl(158, 36%, 37%);
+      display: flex;
+      border-radius: 10px;
+      align-self: center;
+      justify-content: center;
+      width: 100%;
+      padding: 1rem 0 1rem 0;
+
+      
+    }
+    button > img{
+      width: 20px;
+    }
+    span{
+      color:hsl(0, 0%, 100%);
+      padding-left: 20px;
+      font-family: Montserrat;
+
+    }
+    .price{
+
+    }
+
+    @media all and (min-width: 600px) {
+      main{
+        flex-direction: row;
+      }
+      section{
+        justify-content:space-evenly;
+      }
+      img{
+        border-radius: 1em 0 0 1em;
+        width: 100%;
+        
+        
+      }
+      section{
+      border-radius: 0 1em 1em 0;
+      }
+      
+    }
+  </style>
+
+
+</head>
+<body>
+  <div>
+    <main>
+      <picture>
+        <source media="(min-width: 600px)" srcset="images/image-product-desktop.jpg">
+        <source media="(min-width: 0px)" srcset="images/image-product-mobile.jpg"> 
+        <img src="images/favicon-32x32.png" alt="">
+        
+      </picture>
+      <section>
+        <cite>P E R F U M E</cite>
+        <h1>  Gabrielle Essence Eau De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+        <p class = "price">
+          <b>$149.99 </b>
+        <del>$169.99</del> </p>
+       <a href=""> <button> <img src="images/icon-cart.svg" > <span>Add to Cart</span></button></a>
+
+
+      </section>
+    </main>
+  </div>
+
+  <!-- 
+
+
+
+
+  
+
+   -->
+  
+</body>
+</html>
+<!-- srcset="images/image-product-desktop.jpg 700w,
+             ,
+             large.jpg 1500w"
+     sizes="(max-width: 600px) 500px,
+            (max-width: 1200px) 1000px,
+            1500px"
+     alt="Responsive image"> -->
